@@ -30,8 +30,8 @@ export default function Home() {
 
 
   return (
-    <main className="flex h-screen bg-[#219ebc]">
-      <div className="container grid min-w-min max-w-5xl xl:size-auto lg:size-auto md:size-auto sm:size-full bg-[#023047] h-2/3 w-6/12 mx-auto mt-10 p-4 rounded-lg shadow-lg">
+    <main className="container flex h-screen w-screen bg-[#219ebc]">
+      <div className="container grid min-w-min max-w-5xl lg:size-auto md:size-auto  bg-[#023047]  mx-auto mb-10 mt-10 p-4 rounded-lg shadow-lg">
        <h1 className="text-center text-white text-xl" >Calculadora</h1>
        <input className="w-full text-right border-white py-1 px-5 text-2x1 text-white" type="text" value={display}  disabled/>
        <div className="grid grid-cols-4 gap-y-4 gap-x-3 mt-4">
