@@ -30,11 +30,11 @@ export default function Home() {
 
 
   return (
-    <main className="container flex h-screen  bg-[#219ebc]">
-      <div className="md:container md:mx-auto rounded-lg ">
-       <h1 className=" text-center max-w-5xl text-white text-xl" >Calculadora</h1>
-       <input className=" w-full max-w-5xl text-right border-white py-1 px-5 text-2x1 text-white" type="text" value={display}  disabled/>
-       <div className="grid max-w-5xl grid-cols-4 gap-y-4 gap-x-3 mt-4">
+    <main className="flex h-screen bg-[#219ebc]">
+      <div className="container grid min-w-min max-w-5xl xl:size-auto lg:size-auto md:size-auto sm:size-full bg-[#023047] h-2/3 w-6/12 mx-auto mt-10 p-4 rounded-lg shadow-lg">
+       <h1 className="text-center text-white text-xl" >Calculadora</h1>
+       <input className="w-full text-right border-white py-1 px-5 text-2x1 text-white" type="text" value={display}  disabled/>
+       <div className="grid grid-cols-4 gap-y-4 gap-x-3 mt-4">
         <button onClick={clean} className=" flex-initial bg-[#219ebc]  text-center hover:bg-blue-700 text-white font-bold px-py rounded">AC</button>
         <button onClick={deleteNum} className=" bg-[#219ebc] text-center hover:bg-blue-700 text-white font-bold px-py rounded">DE</button>
         <button onClick={addNum} id="." className="bg-[#219ebc] hover:bg-blue-700 text-white font-bold px-py rounded">.</button>
